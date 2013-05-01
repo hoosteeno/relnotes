@@ -1,2 +1,6 @@
+.DS_Store
 *.pyc
+venv/
+output/
+*.swp
 relnotes.sqlite
