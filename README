@@ -1,9 +1,10 @@
-The `run.py` script generates the release notes page for Release, Aurora, Beta, and ESR. 
+The `make_new_release_json.py` script generates json representations of releases 
+and outputs them into files in very specific directories. 
 
-Instructions:
+It takes a number of parameters, but requires none. In the absence of parameters 
+it will generate files/dirs in ./output for Firefox and Firefox for mobile on 
+Aurora/Beta/Release channels. 
 
-1. Make sure you have the `relnotes.sqlite` database file in the root of this project.
-2. Install the requirements (`pip install -r requirements/compiled.txt`)
-3. Run `python run.py -o <output dir> -c [channels,] --{aurora,beta,esr}-suffix <suffix>`
+It requires a `relnotes.sqlite` database file.
 
-The output dir will contain the generated release notes pages.
+More docs to come.
